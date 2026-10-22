@@ -1,0 +1,13 @@
+{
+  "source": "Initial shell diagnostic output, transcribed without adding unavailable timing evidence",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "proxy_variable_presence": {"HTTPS_PROXY": true, "HTTP_PROXY": true, "ALL_PROXY": false, "NO_PROXY": true},
+  "domains": [
+    {"host": "stats.nba.com", "dns_errno": -3, "dns_error": "Temporary failure in name resolution", "direct_tcp": "not reached", "direct_tls": "not reached"},
+    {"host": "data.nba.com", "dns_errno": -3, "dns_error": "Temporary failure in name resolution", "direct_tcp": "not reached", "direct_tls": "not reached"},
+    {"host": "cdn.nba.com", "dns_errno": -3, "dns_error": "Temporary failure in name resolution", "direct_tcp": "not reached", "direct_tls": "not reached"},
+    {"host": "pypi.org", "dns_errno": -3, "dns_error": "Temporary failure in name resolution", "direct_tcp": "not reached", "direct_tls": "not reached"}
+  ],
+  "interpretation": "Direct DNS failure also affects the working control domain; use the configured platform proxy, do not infer total Internet failure."
+}
